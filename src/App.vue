@@ -96,7 +96,8 @@ const switchTabsMobile = (id) => {
   <img v-if="checkAspect()" src="./assets/highschoolchoir.jpg" width="60%">
   <img v-else src="./assets/highschoolchoir.jpg" style="display: flex; width: 90%; margin: auto; flex-direction: column;">
   <Paragraph id="Large">
-    <p class="title">The Large Ensemble Format</p>
+    <p v-if="checkAspect()" class="title">The Large Ensemble Format</p>
+    <p v-else class="mobiletitle">The Large Ensemble Format</p>
     <p class="text">A big reason for the lack of genre coverage and of other musical perspectives is the large ensemble format that most bands and choirs follow. It can be unwieldy to play genres of music that aren’t traditionally played with a large group and this steers band and choir directors away from teaching those styles.  Part of what makes the large ensemble format good is that students must learn how to play together with others, blending together to create one coherent sound. While these large ensemble skills are valuable, when they become the large majority of class time it deprives students of a chance to find their own sound. This is actually by design. Professor Shirley R. Steinberg has done a lot of research into how and why we treat the youth the way we do in the field of education. When she asked a teen what they think the purpose of school is, he replied, “To keep us out of trouble, off the streets until we learn how not to get into trouble. They just want to keep us in.” From this, it’s clear that adult perception of youth largely dictates how they are treated. Steinberg goes on to say that “A fear of youth is a part of our fabric. Woven between the threads, young men and women are unloved, often not understood, and often feared.” This viewpoint stems from the belief that youth is a stage of life, and this comes with many preconceived ideas. In reality, “adolescence can be seen as the effects of certain sets of social practices across numerous domains of contemporary legal, educational, family, and medical domains” (Walkerdine, 1990). Professor Nancy Lesko uses this to argue against the harmful ways we treat youth as a result of the misconceptions we have about how they will act in her paper Denaturalizing Adolescence. Music education is no exception to the effects of this problematic viewpoint. The large ensemble format is driven by a fear of youth. A need to keep youth in line and a distrust of student ideas leads teachers to put students in large groups where they are all expected to play exactly what’s on the page, exactly how the teacher wants it to be played.
       <blockquote  v-if="checkAspect()" style="float: left;"> 
         <p class="quote" style="float: left">"You can't have creativity when you have to play what's on the page." <i style="font-size: .4em !important;">-Tyler Andring</i></p>
@@ -107,7 +108,8 @@ const switchTabsMobile = (id) => {
       I interviewed Tyler Andring about his experiences with large ensembles. Tyler Andring is a junior at Prior Lake High School very passionate about music and involved in just about all the band and choir groups you’re allowed to be in. When asked if the large ensembles he’s involved in reward creativity he responded “You can’t have creativity when you have to play what’s on the page” and that oftentimes “music teachers have a one sided way of viewing things. They explain things in black and white as if there is no in between.” It’s clear from his experiences that the perception of youth shared by many adults is reflected strongly in music education. If teachers had more trust in their students, they could spend less time on large ensembles and more time in smaller groups giving students the tools to create something unique.</p>
     </Paragraph>
   <Paragraph id="Flaws">
-    <p class="title">Fundamental Flaws</p>
+    <p v-if="checkAspect()" class="title">Fundamental Flaws</p>
+    <p v-else class="mobiletitle">Fundamental Flaws</p>
     <p class="text">Because of the way the current system is structured it overlooks a few core aspects of music. Learning music is much like learning a language. For any language you need to be able to read, write, comprehend, and speak it. Music should be no different. Most of what students learn today is how to read and then repeat back what is read. Schools almost never teach students how to write, comprehend, or speak without sheet music present. A 2016 study by José Luis Aróstegui on the decline of music education surveyed a number of music directors at a variety of schools. It pinpoints four key reasons for the decline, one of which being a wrong approach on music advocacy. One director said that “We perpetuate the same required lists of repertoire and never wonder where the kids are coming from. But we have our festivals and people get recognition from their peers who value the same things. They don't compose or improvise with their kids—or do anything that makes space for students' musical ideas, ideas about music, interpretations, etc. “ (J.W., USA).<br><br>
       <blockquote v-if="checkAspect()"  style="float: right;"> 
         <p class="quote" style="float: right; text-align: right; margin-right: 4vh;">It’s like meditation, the very act of doing it is what’s most important.</p>
@@ -118,22 +120,25 @@ const switchTabsMobile = (id) => {
       Many schools look at music education from a very product-oriented perspective. By performing well at music festivals or being able to send students to all-state programs they can prove that their music program gets results. Combine this with the so-called “mozart effect” that music provides and you have a convincing argument for music department funding. While this product-oriented mindset works well for the school board, it is detrimental to the process of learning music. Schools looking to get immediate results tend to speed through the fundamentals. They don’t care about teaching composition or individuality when the whole goal is to sound professional all the time. It frames music only as an art form and a way to enhance student performance in core subjects. While music is both these things, at its core it is a practice. It’s about the process and if you can get students to enjoy that, then they will have no problem engaging in class and continuing to play music after high school. </p>
   </Paragraph>
   <Paragraph id="Importance">
-    <p class="title">The Importance of Music Education</p>
+    <p v-if="checkAspect()" class="title">The Importance of Music Education</p>
+    <p v-else class="mobiletitle">The Importance of Music Education</p>
     <p class="text">Music is a part of being human. It has been and always will be a fundamental piece of society. It is not only important in and of itself, but its effects reach most other facets of human life. A study by Jennifer Krizman looked at neuroplasticity and music. She and her team took 150 freshmen high school students and had half of them enrolled in a drill team and the other half in music training. They found that “music training enhanced neural processing of speech sounds and accelerated auditory brain development after two years. Comparing music training to the drill team also showed it wasn't extracurricular enrichment in general that sped up brain development. It was music.”<br><br>Other studies from the same paper proved similar effects. One from Los Angeles found that “The instrumental group's brain responses and language and listening skills had advanced above those of their peers in a way completely consistent with our initial studies.” It’s interesting to note that it generally takes two years of music training before these changes to the brain become apparent. Music is an intensely social activity. A study in Finland by Professors Päivi-Sisko Eerola & Tuomas Eerola found that students enrolled in the EM (extended music) program had measurable social benefits over the students enrolled in the normal music program. This included students in the EM group being more satisfied with school life and students responding more positively to items representing classroom climate. If the goal of public education is to produce members of society, then music is essential to achieving that. It provides remarkable social and cognitive benefits, and it is simply a fundamental part of all humans.</p>
   </Paragraph>
   <img v-if="checkAspect()" src="./assets/newmusiced.png" width="60%">
   <img v-else src="./assets/newmusiced.png" style="display: flex; width: 90%; margin: auto; flex-direction: column;">
   <p class="text">Students from the New Orleans Center for Creative Arts (NOCCA)</p>
   <Paragraph id="Next">
-    <p class="title">What's next?</p>
+    <p v-if="checkAspect()" class="title">What's next?</p>
+    <p v-else class="mobiletitle">What's next?</p>
     <p class="text">Most importantly, the primary goals of the music programs across the nation need to change. By switching from a product-oriented to a process-oriented perspective the guidelines for new goals become clear. Instead of always scrambling to get ready for the next concert, we can take some time to clear up the fundamentals. Instead of worrying about sounding correct all the time, we can give students space to create their own music. Instead of playing the same western classical repertoire year after year, we can explore other ways of creating music.<br><br>While a large shift such as the one proposed needs change from all levels of government, a large portion of the change can come from music teachers themselves, as they have a lot of control over what they teach and how they teach it. A paper by music professor Patrick Schmidt looks at changing music education from a Freirian perspective. Paulo Freire’s book Pedagogy of the Oppressed is one of the most often cited books in education. In it, Freire writes that, “learning needs to be about reinventing and re-creating rather than retention and memorization”. Schmidt applies this by saying that, “Music education needs to connect the experiences that students and their teachers bring to the classroom.” and that “Problematizing what is presented to them and their own perceptions and self-concepts music can not only be transformed from noun to verb, but most importantly can become a verb of power”. The key concept here is to teach critical thinking skills in music education. As long as music educators understand this shift in perspective, they should be able to justify it to the schools as teaching critical thinking is already widely accepted in education.</p>
   </Paragraph>
   <Paragraph id="Interview">
-    <p class="title">Interviews</p>
+    <p v-if="checkAspect()" class="title">Interviews</p>
+    <p v-else class="mobiletitle">Interviews</p>
       <p class="text"></p>
   </Paragraph>
   <p  v-if="checkAspect()" class="text">
-    <blockquote style="float: right; border-top: 0px solid black; margin-top: 0vh; margin-left: 3vh; margin-right: 0vh; padding: 0;"> 
+    <blockquote style="float: right; border-top: 0px solid rgb(7,8,12); margin-top: 0vh; margin-left: 3vh; margin-right: 0vh; padding: 0;"> 
         <img float="right" src="./assets/chad.jpg" width="100%">
     </blockquote>Chad McCullough is a world-renowned trumpeter/composer. In addition to being a bandleader, producer, and owner of his own record label, he also teaches at both DePaul University and UW-Madison. As a result of this, he works with a lot of students coming straight from high school music programs. I talked with him about what he thought high school music programs were teaching well and some things that he found himself having to work on with new freshmen.
   </p>
@@ -142,7 +147,7 @@ const switchTabsMobile = (id) => {
     <p class="text">Chad McCullough is a world-renowned trumpeter/composer. In addition to being a bandleader, producer, and owner of his own record label, he also teaches at both DePaul University and UW-Madison. As a result of this, he works with a lot of students coming straight from high school music programs. I talked with him about what he thought high school music programs were teaching well and some things that he found himself having to work on with new freshmen.</p>
   </div>
   <p v-if="checkAspect()" class="text">
-    <blockquote style="float: left; border-top: 0px solid black; margin-top: 0vh; margin-left: 0vh; margin-right: 3vh; padding: 0;"> 
+    <blockquote style="float: left; border-top: 0px solid rgb(7,8,12); margin-top: 0vh; margin-left: 0vh; margin-right: 3vh; padding: 0;"> 
         <img float="right" src="./assets/tyler.jpg" width="100%">
     </blockquote>Tyler Andring is currently a junior at Prior Lake High School. He is involved in just about all the music clubs and classes you are allowed to be in. This includes marching band, choir, wind ensemble, jazz band, rock band, percussion ensemble, anthem team, All-state choir, all-state jazz, Minnesota Youth Jazz Bands (MYJB), and his own side projects. I asked him a few questions about what he’s getting out of the music program and what he thinks could be different.</p>
   <div v-else style="align-items: center;">
@@ -150,14 +155,15 @@ const switchTabsMobile = (id) => {
     <p class="text">Tyler Andring is currently a junior at Prior Lake High School. He is involved in just about all the music clubs and classes you are allowed to be in. This includes marching band, choir, wind ensemble, jazz band, rock band, percussion ensemble, anthem team, All-state choir, all-state jazz, Minnesota Youth Jazz Bands (MYJB), and his own side projects. I asked him a few questions about what he’s getting out of the music program and what he thinks could be different.</p>
   </div>
   <p class="text">Full interview transcription coming soon!</p>
-  <p class="title">Sources</p>
-  <p class="text"><br>Schmidt, P. (2005). Music Education as Transformative Practice: Creating New Frameworks for Learning Music through a Freirian Perspective. <i>Visions of Research in Music Education</i>, 6(1), Article 2. <a href="https://digitalcommons.lib.uconn.edu/vrme/vol6/iss1/2/" target="_blank">https://digitalcommons.lib.uconn.edu/vrme/</a></p>
-  <p class="text"><br>Salvador, K., & Allegood, K. (2014). Access to Music Education with Regard to Race in Two Urban Areas. <i>Arts Education Policy Review</i>, 115(3), 82–92. <a href="https://doi.org/10.1080/10632913.2014.914389" target="_blank">https://doi.org/10.1080/10632913.2014.914389</a></p>
-  <p class="text"><br>Aróstegui, J. L. (2016). Exploring the global decline of music education. <i>Arts Education Policy Review</i>, 117(2), 96–103. <a href="https://doi.org/10.1080/10632913.2015.1007406" target="_blank">https://doi.org/10.1080/10632913.2015.1007406</a></p>
-  <p class="text"><br>Eerola, P. S., & Eerola, T. (2014). Extended music education enhances the quality of school life. <i>Music Education Research</i>, 16(1), 88–104. <a href="https://doi.org/10.1080/14613808.2013.829428" target="_blank">https://doi.org/10.1080/14613808.2013.829428</a></p>
-  <p class="text"><br>Kraus, N., & White-Schwoch, T. (2020). The Argument for Music Education. <i>American Scientist</i>, 108(4), 210. <a href="https://go.gale.com/ps/i.do?id=GALE%7CA631096481&sid=googleScholar&v=2.1&it=r&linkaccess=abs&issn=00030996&p=AONE&sw=w&userGroupName=greenbay&aty=ip" target="_blank">https://go.gale.com/ps/i.do?id=GALE%7CA631096481&s</a></p>
+  <p v-if="checkAspect()" class="title">Sources</p>
+  <p v-else class="mobiletitle">Sources</p>
+  <p class="text"><br>Schmidt, P. (2005). Music Education as Transformative Practice: Creating New Frameworks for Learning Music through a Freirian Perspective. <i>Visions of Research in Music Education</i>, 6(1), Article 2. <a href="https://digitalcommons.lib.uconn.edu/vrme/vol6/iss1/2/" target="_blank">https://digitalcommons.lib</a></p>
+  <p class="text"><br>Salvador, K., & Allegood, K. (2014). Access to Music Education with Regard to Race in Two Urban Areas. <i>Arts Education Policy Review</i>, 115(3), 82–92. <a href="https://doi.org/10.1080/10632913.2014.914389" target="_blank">https://doi.org/10.1080/</a></p>
+  <p class="text"><br>Aróstegui, J. L. (2016). Exploring the global decline of music education. <i>Arts Education Policy Review</i>, 117(2), 96–103. <a href="https://doi.org/10.1080/10632913.2015.1007406" target="_blank">https://doi.org/10.1080/</a></p>
+  <p class="text"><br>Eerola, P. S., & Eerola, T. (2014). Extended music education enhances the quality of school life. <i>Music Education Research</i>, 16(1), 88–104. <a href="https://doi.org/10.1080/14613808.2013.829428" target="_blank">https://doi.org/10.1080/</a></p>
+  <p class="text"><br>Kraus, N., & White-Schwoch, T. (2020). The Argument for Music Education. <i>American Scientist</i>, 108(4), 210. <a href="https://go.gale.com/ps/i.do?id=GALE%7CA631096481&sid=googleScholar&v=2.1&it=r&linkaccess=abs&issn=00030996&p=AONE&sw=w&userGroupName=greenbay&aty=ip" target="_blank">https://go.gale.com/ps/</a></p>
   <p class="text"><br>Steinberg, L. D. (2014). Redefining the Notions of Youth: Contextualizing the Possibe for Transformative Youth Leadership. Age of opportunity: lessons from the new science of adolescence. Boston, Houghton Mifflin Harcourt.</p>
-  <p class="text"><br>Lesko, N. (1996). Denaturalizing Adolescence: The Politics of Contemporary Representations. <i>Youth & Society</i>, 28(2), 139-161. <a href="https://doi.org/10.1177/0044118X96028002001" target="_blank">https://doi.org/10.1177/0044118X96028002001</a></p>
+  <p class="text"><br>Lesko, N. (1996). Denaturalizing Adolescence: The Politics of Contemporary Representations. <i>Youth & Society</i>, 28(2), 139-161. <a href="https://doi.org/10.1177/0044118X96028002001" target="_blank">https://doi.org/10.1177/1</a></p>
 </div>
 </template>
 
@@ -173,7 +179,7 @@ blockquote {
   margin-bottom: 0;
   padding-left: 0;
   padding-top: 2vh;
-  border-top: 1vh solid black; 
+  border-top: 1vh solid rgb(7, 8, 12); 
   width: 45%; 
 }
 
@@ -277,6 +283,19 @@ hr.solid {
   margin-bottom: 0;
 }
 
+.mobileheader {
+  font-family: 'Merriweather', sans-serif;
+  font-size: 3em;
+  border: none;
+  max-width: 160vh;
+  font-weight: 900;
+  color: rgb(7, 8, 12);
+  background-color: transparent;
+  position: relative;
+  text-align: center;
+  margin-bottom: 0;
+}
+
 .subheader {
   margin-top: 2vh;
   margin-bottom: 5vh;
@@ -294,6 +313,18 @@ hr.solid {
 .title {
   font-family: 'Merriweather', sans-serif;
   font-size: 2.7em;
+  border: none;
+  font-weight: 900;
+  color: rgb(7, 8, 12);
+  background-color: transparent;
+  position: relative;
+  text-align: left;
+  margin-left: 4.6vh;
+}
+
+.mobiletitle {
+  font-family: 'Merriweather', sans-serif;
+  font-size: 2.4em;
   border: none;
   font-weight: 900;
   color: rgb(7, 8, 12);
