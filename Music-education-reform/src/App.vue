@@ -70,7 +70,8 @@ const switchTabsMobile = (id) => {
     <button class="tab-item" @click="switchTabsMobile('Next')">What's Next</button>
     <button class="tab-item" @click="switchTabsMobile('Interview')">Interviews</button>
   </div>
-  <img src="./assets/cover.png" class="first-image"></img>
+  <img v-if="checkAspect()" src="./assets/cover.png" class="first-image"></img>
+  <img v-else src="./assets/verticalCover.png" class="first-image"></img>
   <br></br>
   
   <div id="vert" class="vert-container">
@@ -149,15 +150,14 @@ const switchTabsMobile = (id) => {
     <p class="text">Tyler Andring is currently a junior at Prior Lake High School. He is involved in just about all the music clubs and classes you are allowed to be in. This includes marching band, choir, wind ensemble, jazz band, rock band, percussion ensemble, anthem team, All-state choir, all-state jazz, Minnesota Youth Jazz Bands (MYJB), and his own side projects. I asked him a few questions about what he’s getting out of the music program and what he thinks could be different.</p>
   </div>
   <p class="text">Full interview transcription coming soon!</p>
-    <p class="title">Sources</p>
-    <p class="text">Schmidt, P. (2005). Music Education as Transformative Practice: Creating New Frameworks for Learning Music through a Freirian Perspective. <i>Visions of Research in Music Education</i>, 6(1), Article 2. <a href="https://digitalcommons.lib.uconn.edu/vrme/vol6/iss1/2/" target="_blank">https://digitalcommons.lib.uconn.edu/vrme/vol6/iss1/2/</a>
-    <br><br>Salvador, K., & Allegood, K. (2014). Access to Music Education with Regard to Race in Two Urban Areas. <i>Arts Education Policy Review</i>, 115(3), 82–92. <a href="https://doi.org/10.1080/10632913.2014.914389" target="_blank">https://doi.org/10.1080/10632913.2014.914389</a>
-    <br><br>Aróstegui, J. L. (2016). Exploring the global decline of music education. <i>Arts Education Policy Review</i>, 117(2), 96–103. <a href="https://doi.org/10.1080/10632913.2015.1007406" target="_blank">https://doi.org/10.1080/10632913.2015.1007406</a>
-    <br><br>Eerola, P. S., & Eerola, T. (2014). Extended music education enhances the quality of school life. <i>Music Education Research</i>, 16(1), 88–104. <a href="https://doi.org/10.1080/14613808.2013.829428" target="_blank">https://doi.org/10.1080/14613808.2013.829428</a>
-    <br><br>Kraus, N., & White-Schwoch, T. (2020). The Argument for Music Education. <i>American Scientist</i>, 108(4), 210. <a href="https://go.gale.com/ps/i.do?id=GALE%7CA631096481&sid=googleScholar&v=2.1&it=r&linkaccess=abs&issn=00030996&p=AONE&sw=w&userGroupName=greenbay&aty=ip" target="_blank">https://go.gale.com/ps/i.do?id=GALE%7CA631096481&s</a>
-    <br><br>Steinberg, L. D. (2014). Redefining the Notions of Youth: Contextualizing the Possibe for Transformative Youth Leadership. Age of opportunity: lessons from the new science of adolescence. Boston, Houghton Mifflin Harcourt.
-    <br><br>Lesko, N. (1996). Denaturalizing Adolescence: The Politics of Contemporary Representations. <i>Youth & Society</i>, 28(2), 139-161. <a href="https://doi.org/10.1177/0044118X96028002001" target="_blank">https://doi.org/10.1177/0044118X96028002001</a>
-  </p>
+  <p class="title">Sources</p>
+  <p class="text"><br>Schmidt, P. (2005). Music Education as Transformative Practice: Creating New Frameworks for Learning Music through a Freirian Perspective. <i>Visions of Research in Music Education</i>, 6(1), Article 2. <a href="https://digitalcommons.lib.uconn.edu/vrme/vol6/iss1/2/" target="_blank">https://digitalcommons.lib.uconn.edu/vrme/</a></p>
+  <p class="text"><br>Salvador, K., & Allegood, K. (2014). Access to Music Education with Regard to Race in Two Urban Areas. <i>Arts Education Policy Review</i>, 115(3), 82–92. <a href="https://doi.org/10.1080/10632913.2014.914389" target="_blank">https://doi.org/10.1080/10632913.2014.914389</a></p>
+  <p class="text"><br>Aróstegui, J. L. (2016). Exploring the global decline of music education. <i>Arts Education Policy Review</i>, 117(2), 96–103. <a href="https://doi.org/10.1080/10632913.2015.1007406" target="_blank">https://doi.org/10.1080/10632913.2015.1007406</a></p>
+  <p class="text"><br>Eerola, P. S., & Eerola, T. (2014). Extended music education enhances the quality of school life. <i>Music Education Research</i>, 16(1), 88–104. <a href="https://doi.org/10.1080/14613808.2013.829428" target="_blank">https://doi.org/10.1080/14613808.2013.829428</a></p>
+  <p class="text"><br>Kraus, N., & White-Schwoch, T. (2020). The Argument for Music Education. <i>American Scientist</i>, 108(4), 210. <a href="https://go.gale.com/ps/i.do?id=GALE%7CA631096481&sid=googleScholar&v=2.1&it=r&linkaccess=abs&issn=00030996&p=AONE&sw=w&userGroupName=greenbay&aty=ip" target="_blank">https://go.gale.com/ps/i.do?id=GALE%7CA631096481&s</a></p>
+  <p class="text"><br>Steinberg, L. D. (2014). Redefining the Notions of Youth: Contextualizing the Possibe for Transformative Youth Leadership. Age of opportunity: lessons from the new science of adolescence. Boston, Houghton Mifflin Harcourt.</p>
+  <p class="text"><br>Lesko, N. (1996). Denaturalizing Adolescence: The Politics of Contemporary Representations. <i>Youth & Society</i>, 28(2), 139-161. <a href="https://doi.org/10.1177/0044118X96028002001" target="_blank">https://doi.org/10.1177/0044118X96028002001</a></p>
 </div>
 </template>
 
