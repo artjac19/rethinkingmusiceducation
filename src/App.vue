@@ -154,7 +154,9 @@ const switchTabsMobile = (id) => {
     <img src="./assets/tyler.jpg" style="display: flex; width: 80%; margin:auto; flex-direction: column;">
     <p class="text">Tyler Andring is currently a junior at Prior Lake High School. He is involved in just about all the music clubs and classes you are allowed to be in. This includes marching band, choir, wind ensemble, jazz band, rock band, percussion ensemble, anthem team, All-state choir, all-state jazz, Minnesota Youth Jazz Bands (MYJB), and his own side projects. I asked him a few questions about what he’s getting out of the music program and what he thinks could be different.</p>
   </div>
-  <p class="text">Full interview transcription coming soon!</p>
+  <Paragraph>
+    <p class="question">Full interview transcription coming soon!</p>
+  </Paragraph>
   <p v-if="checkAspect()" class="title">Sources</p>
   <p v-else class="mobiletitle">Sources</p>
   <p class="text"><br>Schmidt, P. (2005). Music Education as Transformative Practice: Creating New Frameworks for Learning Music through a Freirian Perspective. <i>Visions of Research in Music Education</i>, 6(1), Article 2. <a href="https://digitalcommons.lib.uconn.edu/vrme/vol6/iss1/2/" target="_blank">https://digitalcommons.lib</a></p>
@@ -338,6 +340,26 @@ hr.solid {
   font-family: 'Montserrat', serif;
   font-size: 1.2em;
   border: none;
+  color: rgb(7, 8, 12);
+  background-color: transparent;
+  position: relative;
+  text-align: left;
+  font-weight: 0;
+  box-sizing: border-box;
+  max-width: 125vh;
+  overflow-wrap: break-word;
+  margin-left: 5vh;
+  margin-right: 5vh;
+  line-height: 2;
+  flex: 1;
+}
+
+.question {
+  font-family: 'Montserrat', serif;
+  font-size: 1.2em;
+  border: none;
+  border-top: 1vh solid rgb(7, 8, 12);
+  padding-top: 2vh;
   color: rgb(7, 8, 12);
   background-color: transparent;
   position: relative;
